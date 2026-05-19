@@ -16,5 +16,4 @@ function fibsRec(n, array = [0, 1], i = 0) {
   fibsRec(n - 1, array, i + 1);
   return array;
 }
-console.log(fibsRec(64));
 export { fibs, fibsRec };
