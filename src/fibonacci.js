@@ -8,8 +8,13 @@ function fibs(n) {
   return fibArray;
 }
 
-function fibsRec(n) {
-  if (n === 0) return [n];
+function fibsRec(n, array = [0, 1], i = 0) {
+  if (n === 0) return [0];
+  if (n <= 2) return array;
+  let next = array[i] + array[i + 1];
+  array.push(next);
+  fibsRec(n - 1, array, i + 1);
+  return array;
 }
-
+console.log(fibsRec(64));
 export { fibs, fibsRec };
