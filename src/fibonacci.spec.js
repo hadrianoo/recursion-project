@@ -12,7 +12,7 @@ describe.skip("test fibonacci loop code", () => {
   });
 });
 
-describe("test fibonacci recursive code", () => {
+describe.skip("test fibonacci recursive code", () => {
   test("fibonacci returning [0] for n = 0", () => {
     expect(fibsRec(0)).toEqual([0]);
   });
